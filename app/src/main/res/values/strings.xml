@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TripsApp</string>
+
+    <string name="action_settings">Config</string>
+    <string name="action_logout">Salir</string>
+    <string name="title_activity_home">Ecopetrol</string>
+
+    <item type="integer" name="login" format="integer">100</item>
+
+    <string name="title_section_today">Hoy</string>
+    <string name="title_section_past">Pasados</string>
+    <string name="title_section_future">Futuros</string>
+    <string name="trip_image">Trip Image</string>
+    <string name="title_activity_trip_detail">TripDetailActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+</resources>

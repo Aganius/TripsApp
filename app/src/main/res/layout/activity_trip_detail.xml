@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Las Vegas"
+            android:id="@+id/tvTitle"
+            android:layout_gravity="center_horizontal"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/medium_size"
+            android:textStyle="bold"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUL 7 - JUL 22"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/las_vegas"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@drawable/facebook"
+                android:layout_gravity="left" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/twitter"
+                android:layout_gravity="left" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/instagram"
+                android:layout_gravity="left" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vuelos"
+            android:id="@+id/tvFlights"
+            android:layout_marginLeft="25dp" />
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/flight_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/plane"
+                android:contentDescription="@string/trip_image"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvFlight_book"
+                    android:layout_width="match_parent"
+                    android:text="Bogotá (BOG) - Las Vegas (LAS)"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:text="Mar 7 de Julio, 08:00 AM"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35">
+
+                        <TextView
+                            android:id="@+id/tvFlightGate"
+                            android:layout_width="fill_parent"
+                            android:text="Gate"
+                            android:layout_height="0dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvFlightSeat"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="5dp"
+                            android:text="21"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/holo_blue_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.29">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="fill_parent"
+                            android:text="Asiento"
+                            android:layout_height="fill_parent"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="71dp"
+                            android:layout_height="0dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="5dp"
+                            android:text="3A"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/holo_blue_dark" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/bCheckIn"
+                        android:background="@drawable/button_check_in"
+                        android:onClick="checkIn" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel"
+            android:id="@+id/tvHotel"
+            android:layout_marginLeft="25dp" />
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/hotel_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/bed"
+                android:contentDescription="@string/trip_image"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvHotelLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:text="Las Vegas (LAS)" />
+
+                <TextView
+                    android:id="@+id/tvHotelReservation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Mar 7 de Julio, 01:00 PM." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto"
+            android:id="@+id/tvCar"
+            android:layout_marginLeft="25dp" />
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/car"
+                android:contentDescription="@string/trip_image"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:text="Las Vegas (LAS)" />
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Hertz CF 129383939" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

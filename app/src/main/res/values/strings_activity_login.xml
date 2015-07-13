@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_login">Social Impulse</string>
+    <string name="login_activity_subtitle">Mis reservas</string>
+    <string name="login_activity_footer">www.aviatur.com</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user">Usuario</string>
+    <string name="prompt_password">Clave</string>
+    <string name="action_sign_in">Ingresar</string>
+
+    <!-- Strings related to validation -->
+    <string name="error_invalid_user">Usuario incorrecto</string>
+    <string name="error_invalid_password">Clave no válida</string>
+    <string name="error_incorrect_password">Clave incorrecta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+</resources>
